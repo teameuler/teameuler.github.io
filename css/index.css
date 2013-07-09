@@ -6,3 +6,11 @@ body {
   color: #777;
   text-align: right;
 }
+
+a.none {
+  color: #000;
+}
+
+a.none:hover {
+  color: #000;
+}
