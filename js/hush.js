@@ -1,11 +1,6 @@
-$('#hero-add').click(function () {
-  chrome.webstore.install(function () {
-    $('#hero-add').prop('disabled', true)
-    $('#hero-add').text('Thanks for installing!')
-  })
+$('.button-add').click(function () {
+  chrome.webstore.install('https://chrome.google.com/webstore/detail/hjmoaenjknbdehbiaeeijcppnljflkff', function () {
+    $('.button-add').prop('disabled', true)
+    $('.button-add').text('Thanks for installing!')
+  }, function (e) { console.log(e) })
 })
-
-if (chrome.app.isInstalled) {
-  $('#hero-add').prop('disabled', true)
-  $('#hero-add').text('Thanks for installing!')
-}
