@@ -2,6 +2,8 @@ if (typeof InstallTrigger !== 'undefined')
   $('.firefox').show()
 else if (!!window.chrome && !(!!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0))
   $('.chrome').show()
+else
+  $('.browser').show()
 
 $('.button-add').click(function () {
   chrome.webstore.install('https://chrome.google.com/webstore/detail/hjmoaenjknbdehbiaeeijcppnljflkff', function () {

@@ -20,6 +20,6 @@ a.none:hover {
   color: #000;
 }
 
-.chrome, .firefox {
+.chrome, .firefox, .browser {
   display: none;
 }
