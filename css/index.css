@@ -19,3 +19,7 @@ a.none {
 a.none:hover {
   color: #000;
 }
+
+.chrome, .firefox {
+  display: none;
+}
