@@ -1,0 +1,14 @@
+.hero-unit {
+  position: relative;
+}
+
+.hero-unit > div > img {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+.hero-unit > div.browser > img {
+  float: right;
+  margin-top: -20px;
+}

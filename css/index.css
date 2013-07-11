@@ -7,11 +7,6 @@ body {
   text-align: right;
 }
 
-.hero-unit > img {
-  float: right;
-  margin-top: -20px;
-}
-
 a.none {
   color: #000;
 }
