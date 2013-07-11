@@ -5,9 +5,9 @@ else if (!!window.chrome && !(!!window.opera || navigator.userAgent.indexOf(' OP
 else
   $('.browser').show()
 
-$('.button-add').click(function () {
+$('.chrome-add').click(function () {
   chrome.webstore.install('https://chrome.google.com/webstore/detail/hjmoaenjknbdehbiaeeijcppnljflkff', function () {
-    $('.button-add').prop('disabled', true)
-    $('.button-add').text('Thanks for installing!')
+    $('.chrome-add').prop('disabled', true)
+    $('.chrome-add').text('Thanks for installing!')
   }, function (e) { console.log(e) })
 })
